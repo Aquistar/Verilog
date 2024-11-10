@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../NxN_register.srcs/sources_1/new/DFF.v" \
+"../../../../NxN_register.srcs/sources_1/new/NxN_register.v" \
+"../../../../NxN_register.srcs/sources_1/new/dffn.v" \
+"../../../../NxN_register.srcs/sim_1/new/sim1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

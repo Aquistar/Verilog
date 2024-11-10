@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Nov 10 20:17:24 2024
+# Process ID: 24770
+# Current directory: /home/aquistar/NxN_register/NxN_register.runs/synth_1
+# Command line: vivado -log NxN_register.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NxN_register.tcl
+# Log file: /home/aquistar/NxN_register/NxN_register.runs/synth_1/NxN_register.vds
+# Journal file: /home/aquistar/NxN_register/NxN_register.runs/synth_1/vivado.jou
+# Running On: DESKTOP-3A8957J, OS: Linux, CPU Frequency: 2495.998 MHz, CPU Physical cores: 8, Host memory: 16685 MB
+#-----------------------------------------------------------
+source NxN_register.tcl -notrace

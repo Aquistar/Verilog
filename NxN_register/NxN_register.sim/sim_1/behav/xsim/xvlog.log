@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/DFF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NxN_register
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v:25]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/dffn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffn
+WARNING: [VRFC 10-3380] identifier 'BITS' is used before its declaration [/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/dffn.v:25]
+WARNING: [VRFC 10-3380] identifier 'BITS' is used before its declaration [/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/dffn.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aquistar/NxN_register/NxN_register.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NxN_register_tb
