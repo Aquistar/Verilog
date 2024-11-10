@@ -20,13 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+
+
 module NxN_register(
     input clk,
     input [N-1:0] in,
     output [N-1:0] out
     );
-    parameter  N = 4;
-    wire [N*(N-1):1] t;
+    parameter N = 4;
+    wire [N*(N-1)-1:0] t;
     
-        dffn #(N) p [0:N-1] (.clk(clk), .d({t, in}), .q({out, t}));
+    dffn #(N) p [0:N-1] (.clk(clk), .d({t, in}), .q({out, t}));
 endmodule

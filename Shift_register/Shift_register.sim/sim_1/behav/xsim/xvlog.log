@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter_sp_io
+WARNING: [VRFC 10-3380] identifier 'Len' is used before its declaration [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sim_1/new/tb_shifter_sp_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_shifter_sp_io

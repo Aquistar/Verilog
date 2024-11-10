@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/aquistar/NxN_register/NxN_register.runs/synth_1/NxN_register.tcl"
+  variable script "/home/aquistar/Verilog/NxN_register/NxN_register.runs/synth_1/NxN_register.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,25 +70,24 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010iclg225-1L
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/aquistar/NxN_register/NxN_register.cache/wt [current_project]
-set_property parent.project_path /home/aquistar/NxN_register/NxN_register.xpr [current_project]
+set_property webtalk.parent_dir /home/aquistar/Verilog/NxN_register/NxN_register.cache/wt [current_project]
+set_property parent.project_path /home/aquistar/Verilog/NxN_register/NxN_register.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/aquistar/NxN_register/NxN_register.cache/ip [current_project]
+set_property ip_output_repo /home/aquistar/Verilog/NxN_register/NxN_register.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/DFF.v
-  /home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/dffn.v
-  /home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v
+  /home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/DFF.v
+  /home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/dffn.v
+  /home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,7 +100,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/aquistar/NxN_register/NxN_register.srcs/utils_1/imports/synth_1/NxN_register.dcp
+read_checkpoint -auto_incremental -incremental /home/aquistar/Verilog/NxN_register/NxN_register.srcs/utils_1/imports/synth_1/NxN_register.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

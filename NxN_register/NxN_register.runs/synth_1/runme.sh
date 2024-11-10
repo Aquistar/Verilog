@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/aquistar/NxN_register/NxN_register.runs/synth_1'
+HD_PWD='/home/aquistar/Verilog/NxN_register/NxN_register.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

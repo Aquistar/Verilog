@@ -1,0 +1,283 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Nov 10 22:25:03 2024
+# Process ID: 4049
+# Current directory: /home/aquistar/Verilog/Shift_register/Shift_register.runs/synth_1
+# Command line: vivado -log shifter_sp_io.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source shifter_sp_io.tcl
+# Log file: /home/aquistar/Verilog/Shift_register/Shift_register.runs/synth_1/shifter_sp_io.vds
+# Journal file: /home/aquistar/Verilog/Shift_register/Shift_register.runs/synth_1/vivado.jou
+# Running On: DESKTOP-3A8957J, OS: Linux, CPU Frequency: 2495.998 MHz, CPU Physical cores: 8, Host memory: 16685 MB
+#-----------------------------------------------------------
+source shifter_sp_io.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/aquistar/Verilog/Shift_register/Shift_register.srcs/utils_1/imports/synth_1/shifter_sp_io.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/aquistar/Verilog/Shift_register/Shift_register.srcs/utils_1/imports/synth_1/shifter_sp_io.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top shifter_sp_io -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4112
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1681.254 ; gain = 366.777 ; free physical = 9478 ; free virtual = 16969
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'Len' is used before its declaration [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:29]
+INFO: [Synth 8-6157] synthesizing module 'shifter_sp_io' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+WARNING: [Synth 8-6104] Input port 'data_io' has an internal driver [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'shifter_sp_io' (0#1) [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1755.223 ; gain = 440.746 ; free physical = 9398 ; free virtual = 16890
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1773.035 ; gain = 458.559 ; free physical = 9390 ; free virtual = 16882
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1781.039 ; gain = 466.562 ; free physical = 9390 ; free virtual = 16882
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1789.945 ; gain = 475.469 ; free physical = 9377 ; free virtual = 16870
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   40 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[8] with 1st driver pin 'i_11/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[8] with 2nd driver pin 'data_io[8]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[9] with 1st driver pin 'i_12/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[9] with 2nd driver pin 'data_io[9]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[10] with 1st driver pin 'i_13/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[10] with 2nd driver pin 'data_io[10]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[11] with 1st driver pin 'i_14/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[11] with 2nd driver pin 'data_io[11]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[12] with 1st driver pin 'i_15/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[12] with 2nd driver pin 'data_io[12]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[13] with 1st driver pin 'i_16/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[13] with 2nd driver pin 'data_io[13]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[14] with 1st driver pin 'i_17/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[14] with 2nd driver pin 'data_io[14]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[15] with 1st driver pin 'i_18/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[15] with 2nd driver pin 'data_io[15]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[16] with 1st driver pin 'i_19/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[16] with 2nd driver pin 'data_io[16]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[17] with 1st driver pin 'i_20/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[17] with 2nd driver pin 'data_io[17]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[18] with 1st driver pin 'i_21/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[18] with 2nd driver pin 'data_io[18]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[19] with 1st driver pin 'i_22/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[19] with 2nd driver pin 'data_io[19]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[20] with 1st driver pin 'i_23/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[20] with 2nd driver pin 'data_io[20]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[21] with 1st driver pin 'i_24/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[21] with 2nd driver pin 'data_io[21]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[22] with 1st driver pin 'i_25/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[22] with 2nd driver pin 'data_io[22]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[23] with 1st driver pin 'i_26/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[23] with 2nd driver pin 'data_io[23]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[24] with 1st driver pin 'i_27/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[24] with 2nd driver pin 'data_io[24]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[25] with 1st driver pin 'i_28/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[25] with 2nd driver pin 'data_io[25]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[26] with 1st driver pin 'i_29/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[26] with 2nd driver pin 'data_io[26]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[27] with 1st driver pin 'i_30/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[27] with 2nd driver pin 'data_io[27]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[28] with 1st driver pin 'i_31/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[28] with 2nd driver pin 'data_io[28]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[29] with 1st driver pin 'i_32/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[29] with 2nd driver pin 'data_io[29]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[30] with 1st driver pin 'i_33/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[30] with 2nd driver pin 'data_io[30]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[31] with 1st driver pin 'i_34/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[31] with 2nd driver pin 'data_io[31]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[32] with 1st driver pin 'i_35/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[32] with 2nd driver pin 'data_io[32]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[33] with 1st driver pin 'i_36/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[33] with 2nd driver pin 'data_io[33]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[34] with 1st driver pin 'i_37/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[34] with 2nd driver pin 'data_io[34]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[35] with 1st driver pin 'i_38/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[35] with 2nd driver pin 'data_io[35]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[36] with 1st driver pin 'i_39/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[36] with 2nd driver pin 'data_io[36]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[37] with 1st driver pin 'i_40/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[37] with 2nd driver pin 'data_io[37]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[38] with 1st driver pin 'i_41/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[38] with 2nd driver pin 'data_io[38]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[39] with 1st driver pin 'i_42/z' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io[39] with 2nd driver pin 'data_io[39]' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9240 ; free virtual = 16735
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9239 ; free virtual = 16735
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9239 ; free virtual = 16735
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[0] with 1st driver pin 'shift_reg[0]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[0] with 2nd driver pin 'data_io_IBUF[0]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[1] with 1st driver pin 'shift_reg[1]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[1] with 2nd driver pin 'data_io_IBUF[1]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[2] with 1st driver pin 'shift_reg[2]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[2] with 2nd driver pin 'data_io_IBUF[2]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[3] with 1st driver pin 'shift_reg[3]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[3] with 2nd driver pin 'data_io_IBUF[3]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[4] with 1st driver pin 'shift_reg[4]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[4] with 2nd driver pin 'data_io_IBUF[4]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[5] with 1st driver pin 'shift_reg[5]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[5] with 2nd driver pin 'data_io_IBUF[5]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[6] with 1st driver pin 'shift_reg[6]_i_2/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[6] with 2nd driver pin 'data_io_IBUF[6]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[7] with 1st driver pin 'shift_reg[7]_i_4/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_io_IBUF[7] with 2nd driver pin 'data_io_IBUF[7]_inst/O' [/home/aquistar/Verilog/Shift_register/Shift_register.srcs/sources_1/new/shifter_sp_io.v:22]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     9|
+|4     |LUT3 |     8|
+|5     |FDRE |     8|
+|6     |IBUF |    14|
+|7     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    42|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 80 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.383 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1905.391 ; gain = 590.906 ; free physical = 9238 ; free virtual = 16734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.258 ; gain = 0.000 ; free physical = 9515 ; free virtual = 17010
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2054.004 ; gain = 0.000 ; free physical = 9448 ; free virtual = 16943
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 904e29a5
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 3 Warnings, 80 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2054.039 ; gain = 739.562 ; free physical = 9448 ; free virtual = 16943
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1347.016; main = 1347.016; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2054.004; main = 2054.004; forked = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2078.016 ; gain = 0.000 ; free physical = 9448 ; free virtual = 16943
+INFO: [Common 17-1381] The checkpoint '/home/aquistar/Verilog/Shift_register/Shift_register.runs/synth_1/shifter_sp_io.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file shifter_sp_io_utilization_synth.rpt -pb shifter_sp_io_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 22:25:16 2024...

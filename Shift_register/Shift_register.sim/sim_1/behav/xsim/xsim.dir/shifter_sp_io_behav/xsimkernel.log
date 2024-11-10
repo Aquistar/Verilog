@@ -1,0 +1,7 @@
+Running: xsim.dir/shifter_sp_io_behav/xsimk -simmode gui -wdb shifter_sp_io_behav.wdb -simrunnum 0 -socket 52977
+Design successfully loaded
+Design Loading Memory Usage: 23832 KB (Peak: 23952 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 105568 KB (Peak: 163100 KB)
+Simulation CPU Usage: 20 ms

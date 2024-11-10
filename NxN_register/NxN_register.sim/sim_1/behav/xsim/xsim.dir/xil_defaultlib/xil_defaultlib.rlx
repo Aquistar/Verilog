@@ -2,8 +2,8 @@
 2020.2
 Oct 13 2023
 20:21:30
-/home/aquistar/NxN_register/NxN_register.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-,,,,,,NxN_register_tb,,,,,,,,
-/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/DFF.v,1731236717,verilog,,/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v,,DFF,,,,,,,,
-/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v,1731237431,verilog,,/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/dffn.v,,NxN_register,,,,,,,,
-/home/aquistar/NxN_register/NxN_register.srcs/sources_1/new/dffn.v,1731236742,verilog,,/home/aquistar/NxN_register/NxN_register.srcs/sim_1/new/sim1.v,,dffn,,,,,,,,
+/home/aquistar/Verilog/NxN_register/NxN_register.sim/sim_1/behav/xsim/glbl.v,1731238556,verilog,,,,glbl,,,,,,,,
+/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sim_1/new/sim1.v,1731238556,verilog,,,,NxN_register_tb,,,,,,,,
+/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/DFF.v,1731238556,verilog,,/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v,,DFF,,,,,,,,
+/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/NxN_register.v,1731246524,verilog,,/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/dffn.v,,NxN_register,,,,,,,,
+/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sources_1/new/dffn.v,1731238556,verilog,,/home/aquistar/Verilog/NxN_register/NxN_register.srcs/sim_1/new/sim1.v,,dffn,,,,,,,,

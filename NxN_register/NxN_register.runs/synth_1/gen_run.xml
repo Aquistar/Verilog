@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010iclg225-1L" LaunchTime="1731237442" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/NxN_register.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010iclg225-1L" LaunchTime="1731246555" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/NxN_register.dcp">
   <File Type="VDS-TIMING-PB" Name="NxN_register_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="NxN_register_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="NxN_register.dcp"/>
@@ -59,9 +59,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

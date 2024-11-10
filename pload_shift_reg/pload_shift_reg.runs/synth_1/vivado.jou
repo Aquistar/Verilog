@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Nov 10 22:11:29 2024
+# Process ID: 26044
+# Current directory: /home/aquistar/Verilog/pload_shift_reg/pload_shift_reg.runs/synth_1
+# Command line: vivado -log pload_shift_reg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pload_shift_reg.tcl
+# Log file: /home/aquistar/Verilog/pload_shift_reg/pload_shift_reg.runs/synth_1/pload_shift_reg.vds
+# Journal file: /home/aquistar/Verilog/pload_shift_reg/pload_shift_reg.runs/synth_1/vivado.jou
+# Running On: DESKTOP-3A8957J, OS: Linux, CPU Frequency: 2495.998 MHz, CPU Physical cores: 8, Host memory: 16685 MB
+#-----------------------------------------------------------
+source pload_shift_reg.tcl -notrace
